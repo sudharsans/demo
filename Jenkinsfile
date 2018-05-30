@@ -4,6 +4,7 @@ pipeline {
     stage('Docker test') {
       steps {
         sh 'docker -v'
+        tool(name: 'docker', type: 'docker')
       }
     }
   }
